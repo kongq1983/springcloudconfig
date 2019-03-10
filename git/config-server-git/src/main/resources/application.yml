@@ -1,0 +1,11 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: git-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/kongq1983/config-files.git
+          search-paths: configs
