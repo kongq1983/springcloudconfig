@@ -22,7 +22,11 @@ public class CTConfigController {
     @GetMapping("/config")
     public CTConfig getCTConfig(){
 
-        return config;
+        CTConfig c = new CTConfig();
+        c.setInfo(config.getInfo());
+        c.setVersion(config.getVersion());
+
+        return c;
 
     }
 

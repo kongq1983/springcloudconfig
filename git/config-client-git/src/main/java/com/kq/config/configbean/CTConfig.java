@@ -1,6 +1,7 @@
 package com.kq.config.configbean;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Component;
 
 /**
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Component;
  * @author kq
  * @date 2019/3/10
  */
+@RefreshScope
 @Component
 @ConfigurationProperties(prefix="ctservice")
 public class CTConfig {

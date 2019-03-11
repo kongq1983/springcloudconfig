@@ -1,4 +1,7 @@
 
-/actuator/refresh
+http://localhost:9090/actuator/refresh
+
+
+http://localhost:9091/actuator/refresh
 
 

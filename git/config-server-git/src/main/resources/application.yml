@@ -9,3 +9,10 @@ spring:
         git:
           uri: https://github.com/kongq1983/config-files.git
           search-paths: configs
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
